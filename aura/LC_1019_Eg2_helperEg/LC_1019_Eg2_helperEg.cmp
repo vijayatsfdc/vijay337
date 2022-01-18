@@ -1,0 +1,14 @@
+<aura:component >
+    <aura:attribute name="Name" type="string" default="Vijay" />
+    <aura:attribute name="Msg1" type="string" />
+    <aura:attribute name="Msg2" type="string" />
+    <aura:attribute name="Msg3" type="string" />
+    
+    <lightning:button label="Good Morning" onclick="{!c.gm}" />
+    <lightning:button label="Good Evening" onclick="{!c.gn}" />
+    
+    <p></p>
+    Message from System: <p></p> 
+    {!v.Name} <p></p> {!v.Msg1} <p></p> {!v.Msg2} <p></p> {!v.Msg3} 
+    
+</aura:component>

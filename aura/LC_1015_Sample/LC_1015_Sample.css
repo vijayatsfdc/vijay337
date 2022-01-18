@@ -1,0 +1,15 @@
+.THIS .img {
+    padding-left:100px;
+}
+.THIS.tabs {
+    size: 20px;
+    background-color: White;
+}
+.THIS .tabItem{
+    font-weight: bold;
+    background-color: Black;
+    color:Orange;
+}
+.THIS.l1 {
+    background-color: Gray;
+}

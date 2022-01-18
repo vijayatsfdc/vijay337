@@ -1,0 +1,9 @@
+<aura:component controller="CL_1107_Eg1_createClass">
+    <aura:attribute name="cls" type="class__c" default="{sObjectType:'class__c'}" />
+	<lightning:card>
+        <lightning:input label="Enter Name for Class" value="{!v.cls.Name}"/>
+        <aura:set attribute="footer">
+            <lightning:button label="Submit" onclick ="{!c.clickme}" />
+        </aura:set>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>This can be used to activate and Deactivate trigger directly on Production</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Deactivate trigger</label>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>CountofTest__c</fullName>
+        <externalId>false</externalId>
+        <label>CountofTest</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DeactivateTrigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>DeactivateTrigger?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+</CustomObject>

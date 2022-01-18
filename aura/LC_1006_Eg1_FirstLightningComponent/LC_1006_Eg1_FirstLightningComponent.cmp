@@ -1,0 +1,16 @@
+<aura:component >
+    <lightning:button label="Follow" iconName="utility:add" />
+    <Lightning:buttongroup>
+        <lightning:button label="New Contact" variant="success" />
+    	<lightning:button label="New Case" variant="neutral"/>
+        <lightning:button label="New Note" variant="destructive"/>
+        <lightning:buttonMenu iconName="utility:down" alternativeText="More">
+            <lightning:menuSubheader label="Master Controls" />
+            <lightning:menuItem label="Account" />
+            <lightning:menuItem label="Contact" />
+            <lightning:menuSubheader label="Custom Controls" />
+            <lightning:menuItem label="Map me" />
+            <lightning:menuItem label="Facebook" />
+        </lightning:buttonMenu>
+    </Lightning:buttongroup>
+</aura:component>

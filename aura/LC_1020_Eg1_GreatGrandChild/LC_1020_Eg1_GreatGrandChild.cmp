@@ -1,0 +1,7 @@
+<aura:component >
+	<aura:handler name="firsty" event="c:LE_1020_Eg1_EventEg" action="{!c.showGreatGrandLogic}"/>
+	<lightning:card title="GreatGrandLogic">
+        I am GreatGrandLogic <p></p>
+        I am GreatGrandLogic <p></p>
+    </lightning:card>
+</aura:component>

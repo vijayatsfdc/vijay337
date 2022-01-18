@@ -1,0 +1,23 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name ="fields" type="String[]" default="['Name','Description','Phone','Industry','Rating']"/>
+    
+    <aura:attribute name ="acc" type="Object"/>
+    <aura:attribute name ="recError" type="String"/>
+    
+    <force:recordData 
+                     aura:id="recLoader"
+                     recordId="{!v.recordId}"
+                     fields="{!v.fields}"
+                     targetFields="{!v.acc}"
+                     targetError="{!v.recError}"
+                     />
+    
+    <lightning:card title="Displayed from Component">
+        <lightning:input label="Account Name" value="{!v.acc.Name}"/>
+        <lightning:input label="Account Description" value="{!v.acc.Description}"/>
+        <lightning:input label="Account Phone" value="{!v.acc.Phone}"/>
+        <lightning:input label="Account Industry" value="{!v.acc.Industry}"/>
+        <lightning:input label="Account Rating" value="{!v.acc.Rating}"/>
+    </lightning:card>
+    
+</aura:component>

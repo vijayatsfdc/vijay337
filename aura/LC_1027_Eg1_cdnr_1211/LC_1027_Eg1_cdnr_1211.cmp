@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:registerEvent name="one" type ="c:LE_1027_Eg1_AppEvent"/>
+    <aura:handler event="c:LE_1027_Eg1_AppEvent" action="{!c.eventme}" />
+    
+    <lightning:card title="ApplicationEvent">
+        <lightning:button label="Submit" onclick="{!c.clickme}" />
+    </lightning:card>
+	<c:LC_1027_Eg1_pjr_12111/>
+</aura:component>

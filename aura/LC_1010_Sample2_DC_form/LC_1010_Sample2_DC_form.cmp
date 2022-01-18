@@ -1,0 +1,43 @@
+<aura:component >
+    <lightning:layout class="box">
+        <lightning:layoutItem size="3">
+            <lightning:card title="Edit DC-362641" />
+    	</lightning:layoutItem>
+    </lightning:layout>        
+        <lightning:card title="Information"  >
+            <lightning:layout multipleRows="true">
+                <lightning:layoutItem size="6" padding="around-large" class="l1">
+                    Dev Cloud Number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DC-62641
+                    <lightning:input label="First Name" type="String" value="维杰" />
+                    <lightning:input label="Last Name" type="String" value="萨拉蒂"/>
+                    <lightning:input label="Email" type="email" value="vijayatsvu@gmail.com"/>
+                    <lightning:input label="Organization Name" type="String" value="Intel Corp"/>
+                    <lightning:input label="Country" type="String" />
+                    <lightning:input label="Country Code" type="String" value="CN"/>
+                </lightning:layoutItem>    
+                <lightning:layoutItem size="6"  padding="around-large" class="l1" >    
+                    <lightning:input label="Oneapi Colfax User ID" type="String" value="91190"/>
+                    <lightning:input label="Colfax UUID" type="String" value="d72e19ae-1428-48f2-8528-b505ce0c"/>
+                    <lightning:input label="Edge_Colfax User ID" type="String" value="91189"/>
+                    <lightning:input label="Edge_Colfax UUID" type="String" value="d72e19ae-1428-48f2-8528-b505ce0c"/>
+                    <lightning:input label="Groups" type="String"/>
+                    <lightning:input label="StartDate" type="datetime" value="2021-09-20T15:44:41Z"/>    
+                </lightning:layoutItem>        
+            </lightning:layout>
+            <aura:set attribute="footer">
+                
+            </aura:set>
+        </lightning:card>
+        <lightning:layout class="ft">
+        <lightning:layoutItem size="3.5" >
+            <lightning:card>
+                <lightning:buttonGroup >
+                    <lightning:button label="Cancel"/>
+                    <lightning:button label="Save and New"/>
+                    <lightning:button label="Save"/>
+                </lightning:buttonGroup>
+            </lightning:card>
+    	</lightning:layoutItem>
+    </lightning:layout>        
+
+</aura:component>

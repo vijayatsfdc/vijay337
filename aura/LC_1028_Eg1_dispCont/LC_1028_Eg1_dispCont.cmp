@@ -1,0 +1,8 @@
+<aura:component controller="CL_1028_Eg1_AppEv">
+    <aura:attribute name="dat" type="Object" />
+    <aura:attribute name="col" type="List"/>
+    <aura:handler event="c:LE_1028_Eg1_AppEvent" action="{!c.dispCont}"/>
+    
+    <lightning:dataTable keyField="id" data="{!v.dat}" columns="{!v.col}"/>
+	
+</aura:component>

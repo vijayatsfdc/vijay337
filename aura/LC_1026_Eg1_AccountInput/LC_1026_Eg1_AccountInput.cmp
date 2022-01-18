@@ -1,0 +1,15 @@
+<aura:component >
+    <aura:attribute name="act" type ="Account" default="{'sObjectType':'Account'}" />
+    <aura:registerEvent name="vijayevent" type="c:LE_1026_Eg1_AccountAdd" />
+    
+    <lightning:card title="Create Account">
+    	<aura:set attribute="actions">
+            <lightning:button label="Save" onclick="{!c.saveme}"/>
+        </aura:set>
+        
+        <lightning:input label="Name" value="{!v.act.Name}" />
+        <lightning:input label="Phone" value="{!v.act.Phone}" />
+        <lightning:input label="Fax" value="{!v.act.Fax}" />
+        <lightning:input label="Industry" value="{!v.act.Industry}" />
+    </lightning:card>
+</aura:component>

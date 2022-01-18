@@ -1,0 +1,4 @@
+<aura:component >
+	<aura:handler event="c:LE_1027_Eg1_AppEvent" action="{!c.eventme}"/>	
+    <c:LC_1027_Eg1_cdnr_1211/>
+</aura:component>

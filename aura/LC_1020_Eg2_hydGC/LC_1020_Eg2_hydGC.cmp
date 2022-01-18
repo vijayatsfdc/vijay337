@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:registerEvent name="secondy" type ="c:LE_1020_Eg2_EventwithAttr" />
+    <aura:attribute name="nmgc" type="String" />
+    
+    <lightning:card title = "Employee details in GrandChild">
+        <lightning:input label="Enter Employee Name" value="{!v.nmgc}" />
+        <aura:set attribute="footer">
+            <lightning:button label="Submit" onclick="{!c.callme}"/>
+        </aura:set>
+    </lightning:card>
+</aura:component>

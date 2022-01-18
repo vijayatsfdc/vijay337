@@ -1,0 +1,11 @@
+<aura:component >
+    <lightning:recordEditForm recordId="0015j000007Wjs9AAC" objectApiName="Account">
+    	<lightning:card title="Record Edit form - Always in Edit Mode only">
+            <lightning:inputField fieldName="Name"/>
+            <lightning:inputField fieldName="Phone"/>
+            <lightning:inputField fieldName="Fax"/>
+            <lightning:inputField fieldName="Industry"/>
+            <lightning:inputField fieldName="Active__c"/>
+        </lightning:card>
+    </lightning:recordEditForm>
+</aura:component>

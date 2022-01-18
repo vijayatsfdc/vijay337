@@ -1,0 +1,26 @@
+<aura:component >
+	<lightning:card title="Account" iconName="standard:account">
+    </lightning:card>
+    
+    <lightning:card title="Account1" footer="copyright">
+    </lightning:card>
+    
+    <lightning:card title="Account2" iconName="standard:account" footer="copyright">
+        hi how are you?
+    </lightning:card>
+    
+    <lightning:card title="Account" iconName="standard:account">
+        <aura:set attribute="actions">
+            <lightning:button label="Submit" />
+        	<c:LC_1006_Eg1_FirstLightningComponent />
+        </aura:set>
+        hi. How are you? <p></p>
+        Employee Name: <p></p>
+        Employee Phone:  <p></p>
+        <aura:set attribute="footer">
+            <lightning:button label="Submit" />
+        	<c:LC_1006_Eg1_FirstLightningComponent />
+        </aura:set>        
+    </lightning:card>
+    
+</aura:component>

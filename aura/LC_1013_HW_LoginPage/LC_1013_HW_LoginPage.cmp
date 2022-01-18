@@ -1,0 +1,33 @@
+<aura:component >
+    <aura:attribute name="options" type="List" default="[{'label': 'Remember me', 'value': 'option1'} ]"/>
+    <aura:attribute name="value" type="List" default="option1"/>
+	
+    <lightning:layout class="box" multipleRows="true" >
+        <lightning:layoutItem size="4" padding="around-large">
+            <div class="box1">
+        		<img src="{!$Resource.SFLG1}" height="300" width="150" />
+    		</div>
+    		<lightning:card  class="crd">
+                <lightning:input label="Username" />
+                <lightning:input label="Password" />
+                <br></br>
+                <lightning:button label="Log In" class="btn"/>
+                <lightning:checkboxGroup options="{! v.options }" value="{! v.value }" />
+                <p></p>
+                <p></p>
+                <lightning:formattedUrl value="Forgot your password?" label ="Forgot your password?"/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <lightning:formattedUrl value="Forgot your password?" label ="Use Custom Domain"/>
+                <p></p>
+    		</lightning:card>    
+        	Not a customer? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        	<lightning:button label="Try for Free" />
+		</lightning:layoutItem>       
+        <lightning:layoutItem>
+            <div class="box2">
+            <img src="{!$Resource.SFLG2}" height="600" width="800" />
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>    
+    
+</aura:component>

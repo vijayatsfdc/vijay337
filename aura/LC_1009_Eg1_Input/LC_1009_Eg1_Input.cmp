@@ -1,0 +1,13 @@
+<aura:component >
+    <lightning:card title="Employee_Details">
+    	<lightning:input label="Employee First Name" />
+        <lightning:input label="Employee Last Name" type="Text" />
+        <lightning:input label="Employee DOB" type="Date" />
+        <lightning:input label="Employee DOB time" type="Time" />
+        <lightning:input label="Employee email" type="Email" />
+        <lightning:input label="Employee Phone" type="Phone" />
+        <lightning:input label="Employee Fav Color" type="Color" />
+        <lightning:input label="Employee Salary" type="Decimal" />
+        <lightning:input label="Employee Password" type="Password" />
+	</lightning:card>        
+</aura:component>

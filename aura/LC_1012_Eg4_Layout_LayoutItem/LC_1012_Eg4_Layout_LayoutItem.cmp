@@ -1,0 +1,53 @@
+<aura:component >
+	<lightning:layout>
+        <lightning:layoutItem size="6">
+            <lightning:card title="Card Eg">
+            	<lightning:input label="Name" />
+            </lightning:card>
+        </lightning:layoutItem>
+        <lightning:layoutItem  size="6">
+            <lightning:card title="Card Eg1">
+            	<lightning:input label="Name" />
+            </lightning:card>
+        </lightning:layoutItem>
+        <lightning:layoutItem  size="6">
+            <lightning:card title="Card Eg2">
+            	<lightning:input label="Name" />
+            </lightning:card>
+        </lightning:layoutItem>
+    </lightning:layout>
+    <lightning:layout multipleRows="true">
+        <lightning:layoutItem size="6">
+            <lightning:card title="Card Eg3">
+            	<lightning:input label="Name" />
+            </lightning:card>
+        </lightning:layoutItem>
+        <lightning:layoutItem  size="6">
+            <lightning:card title="Card Eg4">
+            	<lightning:input label="Name" />
+            </lightning:card>
+        </lightning:layoutItem>
+        <lightning:layoutItem  size="6">
+            <lightning:card title="Card Eg5">
+            	<lightning:input label="Name" />
+            </lightning:card>
+        </lightning:layoutItem>
+    </lightning:layout>
+    <lightning:layout multipleRows="true">
+        <lightning:layoutItem size="12" padding="around-small">
+            <lightning:card title="Card Eg6">
+            	<lightning:input label="Name" />
+            </lightning:card>
+        </lightning:layoutItem>
+        <lightning:layoutItem  size="8" padding="around-small">
+            <lightning:card title="Card Eg7">
+            	<lightning:input label="Name" />
+            </lightning:card>
+        </lightning:layoutItem>
+        <lightning:layoutItem  size="4" padding="around-small">
+            <lightning:card title="Card Eg8" >
+            	<lightning:input label="Name" />
+            </lightning:card>
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>

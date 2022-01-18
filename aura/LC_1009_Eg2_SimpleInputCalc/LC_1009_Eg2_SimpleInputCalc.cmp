@@ -1,0 +1,20 @@
+<aura:component >
+    <aura:attribute name="aval" type ="integer" />
+    <aura:attribute name="bval" type ="integer" />
+    <aura:attribute name="res" type ="integer" />
+    
+    <lightning:card title="Calculator" iconName="utility:sobject_collection">
+        <aura:set attribute ="actions">
+            <lightning:button label ="Add" onclick="{!c.addme}" />
+            <lightning:button label ="Substract" onclick="{!c.subme}" />
+            <lightning:button label ="Multiply" onclick="{!c.mulme}" />
+        </aura:set>
+        <aura:set attribute="footer">
+            <lightning:button label="Clear" onclick="{!c.clearme}" />
+        </aura:set>
+        
+        <lightning:input label = "Enter First Number: " value="{!v.aval}" />
+        <lightning:input label = "Enter Second Number: " value="{!v.bval}" />
+        <lightning:input label = "The result is: " value="{!v.res}" />
+    </lightning:card>                 
+</aura:component>

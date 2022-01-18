@@ -1,0 +1,23 @@
+<aura:component >
+    <aura:attribute name="age" type ="integer" default="32" />
+    <aura:attribute name="ages" type ="integer[]" default="[10,20,30,40,50]" />
+    <aura:attribute name="cities" type ="List" default="['Hyd','Blr','Chn','Hyd','Mum','Amr']" />
+    <aura:attribute name="cities1" type ="Set" default="['Hyd','Blr','Chn','Hyd','Mum','Amr']" />
+    
+    <lightning:card Title="Collection Data Type" >
+    	====================Primitive Data type ======================
+        <p>{!v.age}</p>
+        ====================Collection Data type ======================
+        <aura:iteration items="{!v.ages}" var="a" >
+        	<p>{!a}</p>
+        </aura:iteration>
+        ====================List Data type ======================
+        <aura:iteration items="{!v.cities}" var ="c" >
+        	<p>{!c}</p>
+        </aura:iteration>
+        ====================Set Data type ======================
+        <aura:iteration items="{!v.cities1}" var ="c1" >
+        	<p>{!c1}</p>
+        </aura:iteration>
+    </lightning:card>
+</aura:component>

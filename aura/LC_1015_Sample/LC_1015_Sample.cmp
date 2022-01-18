@@ -1,0 +1,43 @@
+<aura:component >
+    <lightning:tabset class="tabs" >
+        <lightning:tab label="About H-D" class="tabItem"/>
+        <lightning:tab label="Compensation and Benefits" />
+        <lightning:tab label="Facilities" />
+        <lightning:tab label="Resources and Services" />
+        <lightning:tab label="News" />
+        <lightning:tab label="Bookmarks" />
+        <lightning:tab label="Toolbox" />
+    </lightning:tabset>
+    <lightning:layout class="l1">
+    	<lightning:layoutItem size="6" class="img">
+        	<img src="{!$Resource.SFLG3}" height="500" width="600" />
+        </lightning:layoutItem>
+        <lightning:layoutItem size="6">
+            <div>
+            <h1 Style="font-size:2vw">
+                <b>
+                    WANTED: YOUR QUESTIONS FOR 				<p></p>
+                    OUR UPCOMING EMPLOYEE...   				<p></p>
+                </b>
+            </h1>        
+            <h1 Style="font-size:1.5vw">
+            Submit your questions about The 		<p></p>
+            Hardwire, Our Business,H-D#1 Culture 	<p></p>
+            and More to the Employee 				<p></p>
+            Communications Email box today!			<p></p>
+                <br></br>
+ 			</h1>                   
+            <b>
+            <h1 Style="font-size:1vw">Posted Sep 30,2021 </h1>			<p></p>
+            </b>
+            <br></br>
+            <p></p>
+                
+			<h1 Style="font-size:1vw">                    
+                <i><b>37</b> Likes </i> |> <b style="color:Orange;">MORE</b>
+                  </h1>
+			</div>                
+            
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>

@@ -1,0 +1,25 @@
+<aura:component >
+    <lightning:layout class="box">
+        <lightning:layoutItem size="4" padding="around-large">
+            <lightning:card class="black">
+                    <img src="{!$Resource.SFLG3}" height="50" width="60" />
+                    <b style="font-size:250%;">VIEW</b>
+            </lightning:card>
+            <lightning:card class="card" >
+                <aura:set attribute="title">
+                    <h1 style="font-size:200%;">LOG-IN </h1>
+                    <p style="font-size:80%;">Sign In with your Harley-Davidson username </p>
+                    <p style="font-size:80%;">and password.</p>
+                </aura:set>
+                <lightning:input placeholder="USERNAME"/>
+                <lightning:input placeholder="PASSWORD"/>
+                <br></br>
+                <lightning:button label="SIGN-IN" class="black"/>
+                <br></br>
+                <lightning:formattedUrl value ="Forgot/Expired password?" label ="Forgot/Expired password?"/>
+                <br></br>
+                <lightning:formattedUrl value ="Register new account." label ="Register new account."/>
+            </lightning:card>
+        </lightning:layoutItem>
+    </lightning:layout>        
+</aura:component>

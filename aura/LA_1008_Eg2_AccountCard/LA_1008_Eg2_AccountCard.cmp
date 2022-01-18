@@ -1,0 +1,30 @@
+<aura:component >
+	<lightning:card iconName="standard:account">
+        <aura:set attribute="title">
+        	Account <br></br>
+            <b>abc</b>
+        </aura:set>
+        
+        <aura:set attribute="actions">
+            <lightning:button label="Follow" iconName="utility:add" />
+            <lightning:buttonGroup>
+                <lightning:button label ="New Contact" />
+                <lightning:button label ="New Case" />
+                <lightning:button label ="New Note" />
+                <lightning:buttonMenu iconName="utility:down">
+                    <lightning:menuItem label="New Oppurtunity" />
+                    <lightning:menuItem label="Change Owner" />
+                </lightning:buttonMenu>
+            </lightning:buttonGroup>
+        </aura:set>
+        Type: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Phone: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        Website: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        AccountOwner: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br></br>
+        Customer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        99999 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        www.abc.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        abc &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </lightning:card>
+</aura:component>

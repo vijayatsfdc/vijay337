@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:registerEvent name="firsty" type="c:LE_1020_Eg1_EventEg" />
+    <aura:handler name="firsty" event="c:LE_1020_Eg1_EventEg" action="{!c.callme}" />
+	<lightning:card title="GrandChild">
+        I am Grand Child <p></p>
+        <lightning:button label="Submit" onclick="{!c.clickme}" />
+        I am Grand Child <p></p>
+    </lightning:card>
+    <c:LC_1020_Eg1_GreatGrandChild />
+</aura:component>

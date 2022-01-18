@@ -1,0 +1,14 @@
+.THIS.box {
+    margin-left:500px;
+}
+
+.THIS .black {
+    padding:around-large;
+    background:black;
+    color:white;
+}
+
+.THIS .card {
+    border-style: double;
+    padding:around-large;
+}

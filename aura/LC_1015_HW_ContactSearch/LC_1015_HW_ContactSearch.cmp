@@ -1,0 +1,32 @@
+<aura:component controller="CL_1015_SSC_SearchContact">
+    <aura:attribute Name="csrt" Type="String" />
+    <aura:attribute Name="Con" Type="Contact" />
+    <aura:attribute Name="flag" Type="Boolean" default="false"/>
+    
+    <lightning:layout>
+    	<lightning:layoutItem size="6">
+        	<lightning:card title="Search Contact" iconName="utility:favorite">
+                <lightning:input label="Search(FirstName, LastName)" value="{!v.csrt}" />
+                	<aura:set attribute="footer">
+                		<lightning:button label="Submit" onclick="{!c.searchme}"/>
+                    </aura:set>
+            </lightning:card>
+        </lightning:layoutItem>
+        <lightning:layoutItem>
+            <aura:if isTrue="{!v.flag}" >
+            	<lightning:card Title="Search Result" >
+                	FirstName:		{!v.Con.FirstName}	<p></p>
+                    LastName:		{!v.Con.LastName}	<p></p>
+                    Title:			{!v.Con.Title}		<p></p>
+                    Department:		{!v.Con.Department}	<p></p>
+                    Phone:			{!v.Con.Phone}		<p></p>
+                    Fax:			{!v.Con.Fax}		<p></p>
+                </lightning:card>
+                <aura:set attribute="else">
+                	<lightning:card title="No Result Found" ></lightning:card>
+                </aura:set>
+            </aura:if>
+            
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>

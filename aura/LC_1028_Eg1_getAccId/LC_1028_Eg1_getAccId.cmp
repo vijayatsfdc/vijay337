@@ -1,0 +1,11 @@
+<aura:component controller="CL_1028_Eg1_AppEv">
+    <aura:attribute name="srt" type = "String" />
+    <aura:registerEvent name="two" type="c:LE_1028_Eg1_AppEvent" />
+    
+    <lightning:card title="Account data">
+        <lightning:input label="Enter Search Text" value="{!v.srt}"/>
+        <aura:set attribute="actions">
+            <lightning:button label="Search" onclick="{!c.search}"/>
+        </aura:set>
+    </lightning:card>
+</aura:component>

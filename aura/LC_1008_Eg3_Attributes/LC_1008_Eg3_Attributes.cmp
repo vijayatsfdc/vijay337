@@ -1,0 +1,14 @@
+<aura:component >
+    <aura:attribute name ="empnm" type="String" default="Vijay" />
+    <aura:attribute name ="age" type="Integer" default="31" />
+    <aura:attribute name ="sal" type="Decimal" />
+    
+    <lightning:card title="Employee">
+    	<aura:set attribute="actions">
+            <lightning:button label="Submit" onclick="{!c.clickme}"/>
+        </aura:set>
+        Employee name: {!v.empnm} <p></p>
+        Employee age: {!v.age}  <p></p>
+        Employee Salary: {!v.sal} <p></p>
+    </lightning:card>
+</aura:component>

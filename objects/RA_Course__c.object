@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Course</label>
+    <nameField>
+        <label>RA_Course__c</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Courses</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Tests__c</fullName>
+        <externalId>false</externalId>
+        <label>Tests</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Knowledge</fullName>
+                    <default>false</default>
+                    <label>Knowledge</label>
+                </value>
+                <value>
+                    <fullName>Skills</fullName>
+                    <default>false</default>
+                    <label>Skills</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Public_c__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Public</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Riding_c__c</fullName>
+        <externalId>false</externalId>
+        <label>Riding Experience Page</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Q1: Reason for taking?</fullName>
+                    <default>false</default>
+                    <label>Q1: Reason for taking?</label>
+                </value>
+                <value>
+                    <fullName>Q2: Ride a bike?</fullName>
+                    <default>false</default>
+                    <label>Q2: Ride a bike?</label>
+                </value>
+                <value>
+                    <fullName>Q3: Manual transmission?</fullName>
+                    <default>false</default>
+                    <label>Q3: Manual transmission?</label>
+                </value>
+                <value>
+                    <fullName>Q4: Motorcycle riding history?</fullName>
+                    <default>false</default>
+                    <label>Q4: Motorcycle riding history?</label>
+                </value>
+                <value>
+                    <fullName>Q5: Beginner course before?</fullName>
+                    <default>false</default>
+                    <label>Q5: Beginner course before?</label>
+                </value>
+                <value>
+                    <fullName>Q6: Own &amp; ride motorcycle?</fullName>
+                    <default>false</default>
+                    <label>Q6: Own &amp; ride motorcycle?</label>
+                </value>
+                <value>
+                    <fullName>Q7: Brand owned?</fullName>
+                    <default>false</default>
+                    <label>Q7: Brand owned?</label>
+                </value>
+                <value>
+                    <fullName>Q8: Make purchase?</fullName>
+                    <default>false</default>
+                    <label>Q8: Make purchase?</label>
+                </value>
+                <value>
+                    <fullName>Q9: Brand to purchase?</fullName>
+                    <default>false</default>
+                    <label>Q9: Brand to purchase?</label>
+                </value>
+                <value>
+                    <fullName>Q10: Graduate/Guest?</fullName>
+                    <default>false</default>
+                    <label>Q10: Graduate/Guest?</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Course_code_c__c</fullName>
+        <externalId>false</externalId>
+        <label>Course Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_c__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>750</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Minimum_Days_c__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum Days</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Search_label_c__c</fullName>
+        <externalId>false</externalId>
+        <label>Search label</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Display_Order_c__c</fullName>
+        <externalId>false</externalId>
+        <label>Display Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Minimum_hours_c__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum hours</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Tests__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Tests</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Link_to_Survey_c__c</fullName>
+        <externalId>false</externalId>
+        <label>Link to Survey</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Mandatory_locations__c</fullName>
+        <externalId>false</externalId>
+        <label>Mandatory locations</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Classroom</fullName>
+                    <default>false</default>
+                    <label>Classroom</label>
+                </value>
+                <value>
+                    <fullName>Meeting Place</fullName>
+                    <default>false</default>
+                    <label>Meeting Place</label>
+                </value>
+                <value>
+                    <fullName>Optional VIP</fullName>
+                    <default>false</default>
+                    <label>Optional VIP</label>
+                </value>
+                <value>
+                    <fullName>Experience</fullName>
+                    <default>false</default>
+                    <label>Experience</label>
+                </value>
+                <value>
+                    <fullName>Range</fullName>
+                    <default>false</default>
+                    <label>Range</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Student_Coach_ratio__c</fullName>
+        <externalId>false</externalId>
+        <label>Student Coach ratio</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_what_to_wear_c__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Email what to wear</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email_what_To_Bring_c__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Email what To Bring</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Experience_Required_c__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Experience Required?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Test_score_required_c__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Test score required?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Questions_Step_3_page_c__c</fullName>
+        <externalId>false</externalId>
+        <label>Questions (Step 3 page)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Q1: License #</fullName>
+                    <default>false</default>
+                    <label>Q1: License #</label>
+                </value>
+                <value>
+                    <fullName>Q2: Country</fullName>
+                    <default>false</default>
+                    <label>Q2: Country</label>
+                </value>
+                <value>
+                    <fullName>Q3: State</fullName>
+                    <default>false</default>
+                    <label>Q3: State</label>
+                </value>
+                <value>
+                    <fullName>Q4: Expiration Date</fullName>
+                    <default>false</default>
+                    <label>Q4: Expiration Date</label>
+                </value>
+                <value>
+                    <fullName>Q5: Learner’s Permit?</fullName>
+                    <default>false</default>
+                    <label>Q5: Learner’s Permit?</label>
+                </value>
+                <value>
+                    <fullName>Q6: Motorcycle Endrsmt/Lic?</fullName>
+                    <default>false</default>
+                    <label>Q6: Motorcycle Endrsmt/Lic?</label>
+                </value>
+                <value>
+                    <fullName>Q7: Reg. or Rental Agrmt?</fullName>
+                    <default>false</default>
+                    <label>Q7: Reg. or Rental Agrmt?</label>
+                </value>
+                <value>
+                    <fullName>Q8: Proof of Insurance?</fullName>
+                    <default>false</default>
+                    <label>Q8: Proof of Insurance?</label>
+                </value>
+                <value>
+                    <fullName>Q9 : Sponsoring Dealership Number</fullName>
+                    <default>false</default>
+                    <label>Q9 : Sponsoring Dealership Number</label>
+                </value>
+                <value>
+                    <fullName>Q10 : Sponsoring Dealership Riding Academy Manager Name</fullName>
+                    <default>false</default>
+                    <label>Q10 : Sponsoring Dealership Riding Academy Manager Name</label>
+                </value>
+                <value>
+                    <fullName>Q11 : Coach Number</fullName>
+                    <default>false</default>
+                    <label>Q11 : Coach Number</label>
+                </value>
+                <value>
+                    <fullName>Q12 : Emergency Contact Name</fullName>
+                    <default>false</default>
+                    <label>Q12 : Emergency Contact Name</label>
+                </value>
+                <value>
+                    <fullName>Q13 : Emergency Contact Phone Number</fullName>
+                    <default>false</default>
+                    <label>Q13 : Emergency Contact Phone Number</label>
+                </value>
+                <value>
+                    <fullName>Q14 : Do You Have Any Allergies?</fullName>
+                    <default>false</default>
+                    <label>Q14 : Do You Have Any Allergies?</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Do_not_send_CXI_survey_c__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Do not send CXI survey</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Experience_or_Training_c__c</fullName>
+        <externalId>false</externalId>
+        <label>Experience or Training?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Experience</fullName>
+                    <default>false</default>
+                    <label>Experience</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Questions_Basic_Information_c__c</fullName>
+        <externalId>false</externalId>
+        <label>Questions (Basic Information)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Q1 : Date of Birth</fullName>
+                    <default>false</default>
+                    <label>Q1 : Date of Birth</label>
+                </value>
+                <value>
+                    <fullName>Q2 : Gender</fullName>
+                    <default>false</default>
+                    <label>Q2 : Gender</label>
+                </value>
+                <value>
+                    <fullName>Q3 : Do You Currently or have you served in the U.S. military?</fullName>
+                    <default>false</default>
+                    <label>Q3 : Do You Currently or have you served in the U.S. military?</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Registration_form_step3_label_c__c</fullName>
+        <externalId>false</externalId>
+        <label>Registration form step3 label</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DRIVER&apos;S LICENSE</fullName>
+                    <default>false</default>
+                    <label>DRIVER&apos;S LICENSE</label>
+                </value>
+                <value>
+                    <fullName>COACH TRAINING DETAILS</fullName>
+                    <default>false</default>
+                    <label>COACH TRAINING DETAILS</label>
+                </value>
+                <value>
+                    <fullName>ADDITIONAL DETAILS</fullName>
+                    <default>false</default>
+                    <label>ADDITIONAL DETAILS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Header_description_for_experience_c__c</fullName>
+        <externalId>false</externalId>
+        <label>Header description for experience</label>
+        <length>2000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+</CustomObject>

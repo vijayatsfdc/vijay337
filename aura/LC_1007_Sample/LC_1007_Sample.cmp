@@ -1,0 +1,7 @@
+<aura:component >
+        <lightning:button label="New" />
+        <br></br>
+        <lightning:button label="Edit" />
+    	<br></br>
+        <lightning:button label="Delete" />
+</aura:component>

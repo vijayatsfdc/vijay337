@@ -1,0 +1,25 @@
+<aura:component controller ="CL_1014_Eg3_SSC_AccByName">
+    <aura:attribute name="Acc" type="Account" />
+    <aura:attribute name="srtxt" type="String" />
+    
+    <lightning:layout>
+    	<lightning:layoutItem size="6">
+        	<lightning:card title="Search By Text">
+                <lightning:input label="Enter the search text" value="{!v.srtxt}"/>
+                <aura:set attribute="footer">
+                    <lightning:button label="Search" onclick="{!c.searchme}"/>
+                </aura:set>
+            </lightning:card>
+        </lightning:layoutItem>
+        <lightning:layoutItem size="6">
+            <lightning:card title="Search result" >
+            	Name:  		{!v.Acc.Name} <p></p>
+                Phone:		{!v.Acc.Phone} <p></p>
+                Fax:		{!v.Acc.Fax} <p></p>
+                Rating:		{!v.Acc.Rating} <p></p>
+                Industry:	{!v.Acc.Industry} <p></p>
+            </lightning:card>
+        </lightning:layoutItem>
+    </lightning:layout>
+	
+</aura:component>

@@ -1,0 +1,37 @@
+<aura:component >
+	<lightning:card title="Standard" iconName="utility:rows">
+        <lightning:input label="Result" aura:id="i3" default="" />
+        <lightning:buttonGroup>
+
+            <lightning:button label="=" onclick="{!c.callme}" aura:id="="/>
+        </lightning:buttonGroup>
+        <br></br>
+        <lightning:buttonGroup>
+            <lightning:button label="7"  onclick="{!c.callme}" aura:id="7"/>
+            <lightning:button label="8"  onclick="{!c.callme}" aura:id="8"/>
+            <lightning:button label="9"  onclick="{!c.callme}" aura:id="9"/>
+            <lightning:button label="*"  onclick="{!c.callme}" aura:id="*"/>
+         </lightning:buttonGroup>
+        <br></br>
+        <lightning:buttonGroup>
+            <lightning:button label="4"  onclick="{!c.callme}" aura:id="4"/>
+            <lightning:button label="5"  onclick="{!c.callme}" aura:id="5"/>
+            <lightning:button label="6"  onclick="{!c.callme}" aura:id="6"/>
+            <lightning:button label="-"  onclick="{!c.callme}" aura:id="-"/>
+         </lightning:buttonGroup>
+        <br></br>
+        <lightning:buttonGroup>
+            <lightning:button label="1"  onclick="{!c.callme}" aura:id="1"/>
+            <lightning:button label="2"  onclick="{!c.callme}" aura:id="2"/>
+            <lightning:button label="3"  onclick="{!c.callme}" aura:id="3"/>
+            <lightning:button label="+"  onclick="{!c.callme}" aura:id="+"/>
+         </lightning:buttonGroup>
+        <br></br>
+        <lightning:buttonGroup>
+            <lightning:button label="c" onclick="{!c.callme}" aura:id="cl"/>
+            <lightning:button label="0" onclick="{!c.callme}" aura:id="0" />
+            <lightning:button label="." onclick="{!c.callme}" aura:id="."/>
+            <lightning:button label="/" onclick="{!c.callme}" aura:id="/"/>
+         </lightning:buttonGroup>
+    </lightning:card>
+</aura:component>

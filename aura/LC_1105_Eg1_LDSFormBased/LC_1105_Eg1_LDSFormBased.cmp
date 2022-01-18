@@ -1,0 +1,11 @@
+<aura:component >
+	<lightning:recordViewForm recordId="0015j000007Wjs9AAC" objectApiName="Account">
+        <lightning:card title="ReadOnly Fields">
+            <lightning:outputField fieldName="Name"/>
+            <lightning:outputField fieldName="Phone"/>
+            <lightning:outputField fieldName="Fax"/>
+            <lightning:outputField fieldName="Industry"/>
+            <lightning:outputField fieldName="Active__c"/>
+        </lightning:card>
+    </lightning:recordViewForm>
+</aura:component>

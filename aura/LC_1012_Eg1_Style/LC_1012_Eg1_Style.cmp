@@ -1,0 +1,12 @@
+<aura:component >
+    <div class="box2">
+        <img src="{!$Resource.SFLG1}" height="300" width="200" />
+    </div>
+    <div class="box">
+        <lightning:card title="Style demo" class="crd">
+            <lightning:input label="Enter First name" type="Text" class="inp"/>
+            <lightning:input label="Enter Second name" type="Text" class="inp" />
+            <lightning:button label="Submit" />
+        </lightning:card>
+    </div>    
+</aura:component>

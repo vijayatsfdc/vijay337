@@ -1,0 +1,21 @@
+<aura:component >
+    <aura:attribute name="flag" type="boolean" default="false" />
+    <lightning:card title="Calculator" iconName="utility:sobject_collection">
+        <aura:set attribute="actions">
+            <lightning:button label="Add" onclick="{!c.addme}" />
+            <lightning:button label="Sub" onclick="{!c.callme}" aura:id="sb"/>
+            <lightning:button label="Mul" onclick="{!c.callme}"  aura:id="ml"/>
+        </aura:set>
+        <aura:set attribute="footer">
+            <lightning:button label="clear" onclick="{!c.callme}" aura:id ="cl" />
+        </aura:set>
+        
+        <lightning:input label="Enter first number: " aura:id ="i1" />
+        <lightning:input label="Enter second number: " aura:id ="i2" />
+    </lightning:card>    
+    <aura:if isTrue="{!v.flag}">
+        <lightning:input label="Result is: " aura:id ="rs" />
+    </aura:if>
+    
+    
+</aura:component>

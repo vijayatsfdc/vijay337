@@ -1,0 +1,38 @@
+<aura:component controller="CL_1019_Eg3_LRetrieveAcc">
+    <aura:attribute name="acc" type ="Account[]" />
+    <aura:attribute name="stxt" type ="String" />
+    
+    <aura:attribute name ="col" type="List"/>
+    <aura:handler name="init" value="{!this}" action="{!c.colme}" />
+    
+    <lightning:card title="Search Account">
+    	<aura:set attribute="actions">
+            <lightning:button label = "Click To Search" onclick="{!c.searchme}" />
+        </aura:set>
+        <lightning:input label="Enter text to Search" value="{!v.stxt}" />
+    </lightning:card>
+    
+    <lightning:layout multipleRows = "True">
+    	<aura:iteration items="{!v.acc}" var="a">
+        	<lightning:layoutItem size="3" padding="around-small" class="crd">
+            	<lightning:card>
+                	<aura:set attribute="title">
+                    <h1>{!a.Name}</h1>
+                    </aura:set>
+                    Phone: {!a.Phone} 			<p></p>
+                    Fax: {!a.Fax} 				<p></p>
+                    Industry: {!a.Industry} 	<p></p>
+                    Rating: {!a.Rating} 		<p></p>
+                </lightning:card>
+            </lightning:layoutItem>
+        </aura:iteration>
+    </lightning:layout>
+	<lightning:layout>
+        <lightning:layoutItem>
+            <lightning:card title="Data in tabular Format" >
+                <lightning:dataTable keyField="id" data ="{!v.acc}" columns="{!v.col}">
+                </lightning:dataTable>
+            </lightning:card>
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>

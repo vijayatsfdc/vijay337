@@ -1,0 +1,25 @@
+<aura:component controller="CL_1116_RiderCourse">
+    <aura:attribute name="cls" type="class__c[]"/>
+    <aura:attribute name="col" type="List"/>
+    <aura:attribute name="srtxt" type="String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.colme}" />
+    
+    <lightning:layout multipleRows="True">
+    	<lightning:layoutItem size="6" padding="around-large">
+    		<lightning:card title="FIND NEW RIDER COURSES IN YOUR AREA">
+                <lightning:input label="Search by Location" placeholder ="Postal Code OR City AND State(City, State)" value ="{!v.srtxt}"/>
+                <br></br>
+                <lightning:button iconName="utility:forward" label="Search for classes" onclick="{!c.searchme}"/>
+    		</lightning:card>    
+        </lightning:layoutItem>
+        <br></br>
+        <lightning:layoutItem size="8" padding="around-large">
+        	<lightning:card title="DEALER LOCATOR">
+            	<lightning:dataTable keyField="id" data="{!v.cls}" columns="{!v.col}" 
+                                     hide-checkbox-column="true" onrowaction="{!c.rowaction}"/>
+            </lightning:card>
+        </lightning:layoutItem>
+        
+    </lightning:layout>
+	
+</aura:component>

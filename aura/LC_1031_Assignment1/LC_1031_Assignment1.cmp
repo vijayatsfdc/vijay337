@@ -1,0 +1,39 @@
+<aura:component >
+	<lightning:tabset >
+        <lightning:tab label="1 NEW MEMBER INFO"/>
+        <lightning:tab label="2 PAYMENT"/>
+        <lightning:tab label="3 CONFIRMATION"/>
+    </lightning:tabset>
+    <lightning:layout>
+        <lightning:layoutItem size="6" padding="around-small">
+            <h1>* Indicates a required field</h1>
+            <p></p>
+            <br></br>
+            <h1 style="font-family:Rockwell Nova Light;font-size:30px"><b>CHOOSE MEMBERSHIP COUNTRY</b></h1>
+            <lightning:select name="select1" label="Country" required="true">
+                <option value="">Select one</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="NZ">NZ</option>
+                <option value="AUSTRALIA">AUSTRALIA</option>
+            </lightning:select>
+        </lightning:layoutItem>
+    </lightning:layout>
+        <p></p>
+        <br></br>
+    <h1 style="font-family:Rockwell Nova Light;font-size:30px"><b>CHOOSE MEMBERSHIP TYPE</b></h1>
+    <lightning:layout>
+        <lightning:layoutItem size="6" padding="around-small">
+            <ui:inputCheckbox aura:id="checkbox" label="FULL MEMBER" class="checkbx"/>
+            <p>Full H.O.G memberships are available only to people who own their</p>
+            <p>own Harley-Davidson@ motorcycle. It provides the most complete </p>
+            <p>package of member benefits</p>
+        </lightning:layoutItem>    
+        <lightning:layoutItem size="6" padding="around-small">
+            <ui:inputCheckbox aura:id="checkbox1" label="ASSOCIATE MEMBER" class="checkbx"/>
+            <p>Associate H.O.G memberships are designed for family and friends of </p>
+            <p>a Harley-Davidson@ motorcycle owner. It offers select benefits and </p>
+            <p>is available to anyone with a full member as a sponsor. A full</p>
+        </lightning:layoutItem>    
+    </lightning:layout>    
+</aura:component>

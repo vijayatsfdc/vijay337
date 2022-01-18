@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" >
+    <aura:attribute Name="Acc" type = "Account" />
+    <aura:attribute Name="id" type="String" />
+</aura:event>

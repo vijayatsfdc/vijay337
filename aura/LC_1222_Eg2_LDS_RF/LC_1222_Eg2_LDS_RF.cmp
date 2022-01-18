@@ -1,0 +1,36 @@
+<aura:component >
+	<lightning:card title="Lightning Record Form">
+    	<lightning:layout>
+        	<lightning:layoutItem Size="4">
+                <lightning:card title="Lightning Record Form: layout=Compact mode=view">
+                    <lightning:RecordForm 
+						recordId="0015j000007Wjs9AAC"
+						objectApiName="Account"
+						layoutType="Compact"
+						mode="View"                                          
+                                          />
+                </lightning:card>
+            </lightning:layoutItem>
+            <lightning:layoutItem Size="4">
+                <lightning:card title="Lightning Record Form: layout=Full mode=Edit">
+                    <lightning:RecordForm 
+						recordId="0015j000007Wjs9AAC"
+						objectApiName="Account"
+						layoutType="Full"
+						mode="Edit"                                          
+                                          />
+                </lightning:card>
+            </lightning:layoutItem>
+            <lightning:layoutItem Size="4">
+                <lightning:card title="Lightning Record Form: layout=Full mode=ReadOnly">
+                    <lightning:RecordForm 
+						recordId="0015j000007Wjs9AAC"
+						objectApiName="Account"
+						layoutType="Full"
+						mode="readOnly"                                          
+                                          />
+                </lightning:card>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </lightning:card>
+</aura:component>

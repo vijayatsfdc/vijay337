@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:handler name="secondy" event="c:LE_1020_Eg2_EventwithAttr" action="{!c.callChild}" />
+    <aura:attribute name="nmc" type="String" />
+    
+    <lightning:card title="Employee details in Child">
+    	Name of the employee is : {!v.nmc} <p></p>
+    </lightning:card>
+    <c:LC_1020_Eg2_hydGC />
+</aura:component>

@@ -1,0 +1,13 @@
+<aura:component >
+    <lightning:card title="Interest Calculator" iconName ="utility:favorite">
+        <aura:set attribute="actions">
+            <lightning:button label="Calculate" onclick="{!c.cal}"/>
+            <lightning:button label="Clear"  onclick="{!c.clr}"/>        
+        </aura:set>    
+    </lightning:card>
+    <lightning:input label="Amount" type="Decimal" aura:id="Amt"/>
+    <lightning:input label="Term" type="Integer" aura:id="Per"/>
+    <lightning:input label="Interest Rate" type="Decimal" aura:id="IR"/>
+    <lightning:input label="Interest Accumulated at Maturity" type="Decimal" aura:id="Interest"/>
+    <lightning:input label="Total Amount at Maturity" type="Decimal" aura:id="Returns"/>
+</aura:component>

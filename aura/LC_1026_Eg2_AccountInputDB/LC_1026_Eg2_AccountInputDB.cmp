@@ -1,0 +1,16 @@
+<aura:component controller = "CL_1026_Eg2_Account">
+    <aura:attribute name="acc" type="Account" default="{'sObjectType':'Account'}" />
+    <aura:attribute name="id" type="String" />
+    <aura:registerEvent name="VijayDB" type="c:LE_1026_Eg2_Account" />
+    
+    <lightning:card title="Account Fields">
+    	<aura:set attribute="actions">
+            <lightning:button label="Add" onclick="{!c.Addme}" />
+        </aura:set>
+        <lightning:input label="Account Name" value="{!v.acc.Name}" />
+        <lightning:input label="Account Phone" value="{!v.acc.Phone}" />
+        <lightning:input label="Account Fax" value="{!v.acc.Fax}" />
+        <lightning:input label="Account Industry" value="{!v.acc.Industry}" />
+    </lightning:card>
+    
+</aura:component>

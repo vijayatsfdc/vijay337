@@ -1,0 +1,53 @@
+<aura:component controller="CL_1118_updateStudAccnt">
+    <aura:attribute name="Stud" type="StudentOfClass__c" default = "{sObjectType:'StudentOfClass__c'}" />
+ 	<aura:attribute name="options" type="List" default="[
+    {'label': 'Yes, Active', 'value': 'Yes, Active'},
+    {'label': 'Yes, Veteran', 'value': 'Yes, Veteran'},
+    {'label': 'No', 'value': 'No'}
+    ]"/>
+    
+	<lightning:layout>
+    	<lightning:layoutItem size="6" padding="around-large">
+            <lightning:card title="STEP 1: BASIC INFORMATION">
+                <lightning:input label="First Name" value="{!v.Stud.First_Name__c}"/>
+                <lightning:input label="Middle Name" value="{!v.Stud.Middle_Name__c}"/>
+                <lightning:input label="Last Name" value="{!v.Stud.Last_Name__c}"/>
+                <lightning:select label="Suffix" value="{!v.Stud.Suffix__c}">
+                    <option value="">choose one...</option>
+        			<option value="Mr. ">Mr. </option>
+        			<option value="Mrs. ">Mrs. </option>
+        			<option value="Miss ">Miss </option>
+                </lightning:select>
+                <lightning:input label="Date of Birth" type="date" value ="{!v.Stud.Date_of_Birth__c}"/>
+                <lightning:select label="Gender" value="{!v.Stud.Gender__c}">
+                    <option value="">choose one...</option>
+        			<option value="Male">Male</option>
+        			<option value="Female">Female</option>
+        			<option value="Other">Other</option>
+                </lightning:select>
+                <lightning:radioGroup label="Do you currently or have you served in the US Military?" 
+                                      type="radio" options="{!v.options}"
+                                      value="{!v.Stud.Working_in_Military__c}"/>
+            </lightning:card>
+            <lightning:card>
+            	<lightning:input label="Primary Phone" value="{!v.Stud.Primary_Phone__c}"/>
+                <lightning:select label="SELECT TYPE" value="{!v.Stud.SELECT__c}">
+                    <option value="">choose one...</option>
+        			<option value="Mobile">Mobile</option>
+        			<option value="Home">Home</option>
+        			<option value="Office">Office</option>
+                </lightning:select>
+                <lightning:input label="Email" value="{!v.Stud.EMAIL__c}"/>
+                <lightning:input label="Street Address" value="{!v.Stud.STREET_ADDRESS__c}" />
+                <lightning:input label="City" value="{!v.Stud.City__c}"/>
+                <lightning:input label="Country" value="{!v.Stud.Country__c}"/>
+                <lightning:input label="State" value="{!v.Stud.State__c}"/>
+                <lightning:input label="Postal Code" value="{!v.Stud.Postal_Code__c}"/>
+                <aura:set attribute="footer">
+            		<lightning:button label="Submit" onclick="{!c.submitme}"/>
+        		</aura:set>
+            </lightning:card>
+            
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>
